@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Studio Bela Bronze Color Palette */
+    --background: 0 0% 35%; /* #595959 - Cinza Escuro */
+    --foreground: 0 0% 95%; /* #F2F2F2 - Light text */
+
+    --card: 0 0% 35%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 35%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 352 69% 81%; /* #F2AEB4 - Rosa Claro */
+    --primary-foreground: 0 0% 15%;
+
+    --secondary: 344 39% 58%; /* #BF6980 - Rosa Queimado */
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 45%;
+    --muted-foreground: 0 0% 75%;
+
+    --accent: 352 69% 81%;
+    --accent-foreground: 0 0% 15%;
+
+    --light-section: 0 0% 95%; /* #F2F2F2 - Cinza Claro */
+    --dark-section: 0 0% 35%; /* #595959 - Cinza Escuro */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 45%;
+    --input: 0 0% 45%;
+    --ring: 352 69% 81%;
+
+    --radius: 1rem;
+    
+    /* Gradient & Glow Effects */
+    --gradient-shimmer: linear-gradient(135deg, hsl(352 69% 81%), hsl(344 39% 58%));
+    --glow-soft: radial-gradient(circle at center, hsl(352 69% 81% / 0.15), transparent 70%);
+    --glow-primary: 0 0 60px hsl(352 69% 81% / 0.3);
+    
+    /* Glassmorphism */
+    --glass-bg: hsl(0 0% 35% / 0.4);
+    --glass-border: hsl(352 69% 81% / 0.2);
+    
+    /* Transitions */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Keep same scheme - no dark mode toggle needed */
+    --background: 0 0% 35%;
+    --foreground: 0 0% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+  }
+}
+
+@layer utilities {
+  /* Glow effects */
+  .glow-soft {
+    background: var(--glow-soft);
+  }
+  
+  .text-gradient {
+    background: var(--gradient-shimmer);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Glassmorphism */
+  .glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  
+  /* Animations */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+  
+  /* Scroll animations */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hover effects */
+  .hover-lift {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--glow-primary);
+  }
+  
+  .hover-glow {
+    transition: filter 0.4s ease;
+  }
+  
+  .hover-glow:hover {
+    filter: drop-shadow(var(--glow-primary));
+  }
+}

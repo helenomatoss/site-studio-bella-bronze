@@ -1,19 +1,19 @@
-import { Star } from "lucide-react";
+﻿import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Maria Eduarda Silva",
-    text: "Experiência incrível! O ambiente é luxuoso e o atendimento é impecável. Meu bronze ficou perfeito e durou muito mais do que eu esperava.",
+    name: "Emily Borborema (@emilyborborema_)",
+    text: "Tá perfeito! A menina super simpática. Fiz até o banho de lua.",
     rating: 5,
   },
   {
-    name: "Juliana Rodrigues",
-    text: "O Studio Bela Bronze superou todas as minhas expectativas. A equipe é extremamente profissional e o resultado é simplesmente maravilhoso!",
+    name: "Rhay (@rhay_1909)",
+    text: "Indico de olhos fechados, trabalho impecável.",
     rating: 5,
   },
   {
-    name: "Camila Almeida",
-    text: "Melhor investimento em beleza que já fiz! O bronze ficou natural e uniforme. Recomendo de olhos fechados!",
+    name: "Cliente (via Stories)",
+    text: "Qual lugar fornece protetor solar de rosto e máscara facial pra cuidar do rosto enquanto tá exposto ao bronze? O Studio Bela Bronze fornece!",
     rating: 5,
   },
 ];
@@ -50,10 +50,6 @@ const Testimonials = () => {
               <p className="text-foreground/90 leading-relaxed mb-6 italic">
                 "{testimonial.text}"
               </p>
-              
-              <div className="border-t border-primary/20 pt-4">
-                <p className="font-semibold text-foreground">{testimonial.name}</p>
-              </div>
             </div>
           ))}
         </div>
@@ -63,3 +59,6 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
+
+

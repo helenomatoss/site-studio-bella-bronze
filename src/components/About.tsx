@@ -1,8 +1,8 @@
 import imgFlavia from "@/assets/flavia2.jpg";
 
-const title = "A Ess\u00EAncia Bela Bronze, por Fl\u00E1via";
+const title = "A Ess\u00EAncia Bella Bronze, por Fl\u00E1via";
 const quote =
-  "\u201CAcredito que o bronzeado perfeito \u00E9 uma forma de arte que ilumina a beleza natural de cada mulher. Criei o Studio Bela Bronze n\u00E3o apenas para oferecer uma marquinha impec\u00E1vel, mas para ser um ref\u00FAgio onde a tecnologia e o cuidado se unem para renovar sua autoestima.\u201D";
+  "\u201CAcredito que o bronzeado perfeito \u00E9 uma forma de arte que ilumina a beleza natural de cada mulher. Criei o Studio Bella Bronze n\u00E3o apenas para oferecer uma marquinha impec\u00E1vel, mas para ser um ref\u00FAgio onde a tecnologia e o cuidado se unem para renovar sua autoestima.\u201D";
 const paragraphOne =
   "Nosso espa\u00E7o foi meticulosamente projetado para ser uma experi\u00EAncia \u00FAnica. Combinamos um ambiente moderno e acolhedor com o que h\u00E1 de mais tecnol\u00F3gico em equipamentos de bronzeamento, garantindo resultados deslumbrantes com total seguran\u00E7a.";
 const paragraphTwo =
@@ -24,7 +24,7 @@ const About = () => {
           <div className="rounded-2xl overflow-hidden shadow-2xl h-full md:min-h-[560px]">
             <img
               src={imgFlavia}
-              alt="Fl\u00E1via no Studio Bela Bronze"
+              alt="Fl\u00E1via no Studio Bella Bronze"
               loading="lazy"
               className="block w-full h-full object-cover object-left"
               sizes="(min-width:1024px) 48vw, (min-width:768px) 50vw, 100vw"

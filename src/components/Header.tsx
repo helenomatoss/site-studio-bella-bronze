@@ -1,6 +1,6 @@
 import { Phone } from "lucide-react";
 import { siteConfig } from "@/config/site";
-import logo from "@/assets/bela-bronze-logo.png";
+import logo from "@/assets/bella-bronze-logo.png";
 
 const navLinks = [
   { label: "Sobre", href: "#sobre" },
@@ -14,8 +14,8 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" className="flex items-center" aria-label="Studio Bela Bronze">
-          <img src={logo} alt="Studio Bela Bronze" className="h-16 w-auto" />
+        <a href="/" className="flex items-center" aria-label="Studio Bella Bronze">
+          <img src={logo} alt="Studio Bella Bronze" className="h-16 w-auto" />
         </a>
 
         <nav className="hidden md:flex items-center gap-8">

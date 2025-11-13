@@ -1,22 +1,18 @@
-import service1 from "@/assets/service-1.jpg";
-import service2 from "@/assets/service-2.jpg";
-import service3 from "@/assets/service-3.jpg";
-
 const services = [
   {
-    title: "Bronzeamento de Alta Performance",
-    description: "Tecnologia de ponta para um bronze perfeito, uniforme e duradouro. Resultados visíveis desde a primeira sessão.",
-    image: service1,
+    title: "Bronze Dourado",
+    description:
+      "Um bronze clássico e elegante, pensado para realçar o dourado natural da pele com suavidade e segurança. O resultado é um tom uniforme, iluminado e sofisticado, perfeito para quem deseja um visual radiante o ano inteiro.",
   },
   {
-    title: "Flash Bronze (a Jato)",
-    description: "Bronze instantâneo e natural em minutos. Perfeito para eventos especiais e resultados rápidos.",
-    image: service2,
+    title: "Bronze Pele Perfeita",
+    description:
+      "Um protocolo completo que prepara e trata a pele para um bronze impecável. A renovação inicial garante uniformidade, enquanto as ativações especiais intensificam a cor. Ideal para quem busca um bronze marcante, duradouro e com acabamento de alta qualidade.",
   },
   {
-    title: "Terapia Pós-Sol",
-    description: "Banho de Lua e hidratação profunda para prolongar seu bronze e nutrir a pele com cuidado premium.",
-    image: service3,
+    title: "Bronze Europeu Hidratante",
+    description:
+      "Um bronze elegante com hidratação profunda e efeito glow. Proporciona cor intensa, pele macia e um acabamento luminoso, garantindo um resultado sofisticado para quem deseja brilho e viço naturais",
   },
 ];
 
@@ -39,26 +35,16 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="glass-card rounded-2xl overflow-hidden hover-lift group"
+              className="glass-card rounded-2xl hover-lift group p-8 h-full flex"
               style={{
                 marginTop: index === 1 ? "3rem" : "0",
               }}
             >
-              <div className="relative h-64 overflow-hidden">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent"></div>
-              </div>
-              
-              <div className="p-8">
-                <h3 className="text-2xl font-serif font-semibold text-foreground mb-4">
+              <div className="space-y-3 my-auto text-foreground">
+                <h3 className="text-xl md:text-2xl font-serif font-semibold">
                   {service.title}
                 </h3>
-                <p className="text-foreground/80 leading-relaxed">
+                <p className="text-sm md:text-base leading-relaxed text-foreground/80">
                   {service.description}
                 </p>
               </div>

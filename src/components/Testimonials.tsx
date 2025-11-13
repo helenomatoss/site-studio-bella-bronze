@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     name: "Cliente (via Stories)",
-    text: "Qual lugar fornece protetor solar de rosto e máscara facial pra cuidar do rosto enquanto tá exposto ao bronze? O Studio Bela Bronze fornece!",
+    text: "Qual lugar fornece protetor solar de rosto e máscara facial pra cuidar do rosto enquanto tá exposto ao bronze? O Studio Bella Bronze fornece!",
     rating: 5,
   },
 ];
@@ -27,7 +27,7 @@ const Testimonials = () => {
       <div className="container mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-4">
-            A Experiência <span className="text-gradient">Bela Bronze</span>
+            A Experiência <span className="text-gradient">Bella Bronze</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6"></div>
         </div>

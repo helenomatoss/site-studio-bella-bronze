@@ -1,4 +1,4 @@
-import logo from "@/assets/bela-bronze-logo.png";
+import logo from "@/assets/bella-bronze-logo.png";
 import webgestLogo from "@/assets/webgest-logo.jpg";
 import { siteConfig } from "@/config/site";
 
@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-col items-center gap-8">
           {/* Logo */}
-          <img src={logo} alt="Studio Bela Bronze" className="h-20 w-auto opacity-80" loading="lazy" />
+          <img src={logo} alt="Studio Bella Bronze" className="h-20 w-auto opacity-80" loading="lazy" />
           
           {/* Links */}
           <nav className="flex flex-wrap items-center justify-center gap-6">
@@ -28,7 +28,7 @@ const Footer = () => {
           
           {/* Copyright */}
           <p className="text-sm text-foreground/40 text-center">
-            © 2025 Studio Bela Bronze. Todos os direitos reservados.
+            © 2025 Studio Bella Bronze. Todos os direitos reservados.
           </p>
         </div>
         

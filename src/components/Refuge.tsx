@@ -20,7 +20,7 @@ const Refuge = () => {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl">
               <img
                 src={studioInterior}
-                alt="Interior do Studio Bela Bronze"
+                alt="Interior do Studio Bella Bronze"
                 className="w-full h-[500px] md:h-[600px] object-cover"
                 loading="lazy"
               />
@@ -30,7 +30,7 @@ const Refuge = () => {
             {/* Overlapping Text Block */}
             <div className="absolute left-0 md:left-12 bottom-8 md:bottom-12 max-w-2xl glass-card rounded-2xl p-8 md:p-12 m-6 md:m-0">
               <p className="text-lg md:text-xl leading-relaxed text-foreground/90 font-light">
-                O Studio Bela Bronze é mais do que um espaço de bronzeamento, é uma celebração da sua beleza. 
+                O Studio Bella Bronze é mais do que um espaço de bronzeamento, é uma celebração da sua beleza. 
                 <br /><br />
                 Aqui, cada detalhe foi pensado para oferecer uma experiência de luxo, conforto e segurança, 
                 com profissionais qualificadas e os melhores produtos do mercado.

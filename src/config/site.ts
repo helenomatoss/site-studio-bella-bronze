@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Studio Bela Bronze",
+  name: "Studio Bella Bronze",
   links: {
     whatsapp: "https://wa.me/5511911418161",
     developer: "https://webgestsolutions.com/",

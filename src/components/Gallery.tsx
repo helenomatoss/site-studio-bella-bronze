@@ -16,11 +16,11 @@ const images = [
 
 const Gallery = () => {
   return (
-    <section id="galeria" className="relative py-24 px-6 bg-light overflow-hidden">
+    <section id="galeria" className="relative py-20 md:py-24 px-4 sm:px-6 bg-light overflow-hidden">
       {/* Soft Glow */}
       <div className="absolute bottom-0 left-1/4 w-[800px] h-[800px] bg-[radial-gradient(circle,hsl(352_69%_81%/0.1),transparent_70%)] pointer-events-none"></div>
       
-      <div className="container mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-dark mb-4">
             Resultados que <span className="text-gradient">Inspiram Confiança</span>
@@ -29,16 +29,16 @@ const Gallery = () => {
         </div>
         
         {/* Masonry Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-3 md:gap-4 max-w-6xl mx-auto">
           {images.map((image, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-xl group cursor-pointer hover-lift aspect-square bg-black/30"
+              className="relative overflow-hidden rounded-xl group cursor-pointer hover-lift aspect-[3/4] bg-black/30"
             >
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

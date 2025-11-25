@@ -13,7 +13,7 @@ const navLinks = [
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
         <a href="/" className="flex items-center" aria-label="Studio Bella Bronze">
           <img src={logo} alt="Studio Bella Bronze" className="h-16 w-auto" />
         </a>

@@ -18,11 +18,11 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="servicos" className="relative py-24 px-6 bg-light overflow-hidden">
+    <section id="servicos" className="relative py-20 md:py-24 px-4 sm:px-6 bg-light overflow-hidden">
       {/* Soft Glow Background */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-[radial-gradient(circle,hsl(352_69%_81%/0.08),transparent_70%)] pointer-events-none"></div>
       
-      <div className="container mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10 px-0 sm:px-2">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-dark mb-4">
             Tratamentos <span className="text-gradient">Exclusivos</span>
@@ -31,14 +31,11 @@ const Services = () => {
         </div>
         
         {/* Asymmetrical Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto items-stretch">
           {services.map((service, index) => (
             <div
               key={index}
-              className="glass-card rounded-2xl hover-lift group p-8 h-full flex"
-              style={{
-                marginTop: index === 1 ? "3rem" : "0",
-              }}
+              className="glass-card rounded-2xl hover-lift group p-6 sm:p-8 h-full flex flex-col justify-between"
             >
               <div className="space-y-3 my-auto text-foreground">
                 <h3 className="text-xl md:text-2xl font-serif font-semibold">

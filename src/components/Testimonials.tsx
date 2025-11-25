@@ -20,11 +20,11 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="depoimentos" className="relative py-24 px-6 bg-background overflow-hidden">
+    <section id="depoimentos" className="relative py-20 md:py-24 px-4 sm:px-6 bg-background overflow-hidden">
       {/* Soft Glow */}
       <div className="absolute top-1/2 right-0 w-[800px] h-[800px] bg-[radial-gradient(circle,hsl(344_39%_58%/0.12),transparent_70%)] pointer-events-none"></div>
       
-      <div className="container mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-4">
             A Experiência <span className="text-gradient">Bella Bronze</span>
@@ -32,14 +32,11 @@ const Testimonials = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-6"></div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="glass-card rounded-2xl p-8 hover-lift"
-              style={{
-                marginTop: index === 1 ? "2rem" : "0",
-              }}
+              className="glass-card rounded-2xl p-8 hover-lift h-full flex flex-col justify-between"
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (

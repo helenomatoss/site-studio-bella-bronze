@@ -4,7 +4,7 @@ import { siteConfig } from "@/config/site";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-16 md:py-20 lg:py-28">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroBackground})` }}></div>
       
@@ -16,14 +16,14 @@ const Hero = () => {
       </div>
       
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-6 text-center max-w-4xl">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 leading-tight fade-in-up">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 text-center max-w-5xl flex flex-col items-center">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-bold mb-6 leading-tight fade-in-up">
           <span className="text-gradient">A Pele Dourada</span>
           <br />
           <span className="text-foreground">que Celebra Você</span>
         </h1>
         
-        <p className="text-lg md:text-xl text-foreground/90 mb-12 max-w-2xl mx-auto font-light fade-in-up" style={{ animationDelay: "0.2s" }}>
+        <p className="text-lg sm:text-xl text-foreground/90 mb-10 md:mb-12 max-w-2xl mx-auto font-light fade-in-up" style={{ animationDelay: "0.2s" }}>
           Uma experiência de luxo e bem-estar para uma beleza que irradia confiança.
         </p>
         

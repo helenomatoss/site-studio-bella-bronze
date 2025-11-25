@@ -14,26 +14,28 @@ const About = () => {
       id="sobre"
       className="relative isolate w-full bg-light py-16 md:py-24"
     >
-      <div className="container mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center font-serif font-semibold text-3xl md:text-5xl leading-tight text-slate-800">
           {title}
         </h2>
         <div className="mx-auto mt-3 h-[3px] w-24 rounded-full bg-rose-300/90"></div>
 
-        <div className="mt-10 grid gap-10 md:grid-cols-2 md:items-stretch">
-          <div className="rounded-2xl overflow-hidden shadow-2xl h-full md:min-h-[560px]">
-            <img
-              src={imgFlavia}
-              alt="Fl\u00E1via no Studio Bella Bronze"
-              loading="lazy"
-              className="block w-full h-full object-cover object-left"
-              sizes="(min-width:1024px) 48vw, (min-width:768px) 50vw, 100vw"
-            />
+        <div className="mt-10 flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+          <div className="w-full max-w-md md:max-w-lg lg:max-w-xl mx-auto lg:mx-0">
+            <div className="rounded-2xl overflow-hidden shadow-2xl h-full">
+              <img
+                src={imgFlavia}
+                alt="Fl\u00E1via no Studio Bella Bronze"
+                loading="lazy"
+                className="block w-full h-full object-cover object-left"
+                sizes="(min-width:1024px) 48vw, (min-width:768px) 50vw, 100vw"
+              />
+            </div>
           </div>
 
-          <div className="flex flex-col justify-between h-full md:min-h-[560px] text-slate-800">
-            <div>
-              <blockquote className="font-serif italic text-2xl md:text-3xl leading-relaxed">
+          <div className="flex-1 w-full max-w-xl mx-auto lg:mx-0 px-2 sm:px-0 flex flex-col justify-between text-slate-800 gap-6">
+            <div className="space-y-6">
+              <blockquote className="font-serif italic text-2xl md:text-3xl leading-relaxed text-center lg:text-left">
                 {quote}
               </blockquote>
 
@@ -45,7 +47,7 @@ const About = () => {
 
             <a
               href="#contato"
-              className="mt-8 inline-flex self-start items-center rounded-full px-6 py-3 font-semibold text-white shadow-lg bg-gradient-to-r from-rose-300 to-rose-500 hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-400"
+              className="mt-2 inline-flex self-center lg:self-start items-center rounded-full px-6 py-3 font-semibold text-white shadow-lg bg-gradient-to-r from-rose-300 to-rose-500 hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-400"
             >
               Venha nos conhecer
             </a>
